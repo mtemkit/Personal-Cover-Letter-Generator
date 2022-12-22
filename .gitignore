@@ -1,0 +1,8 @@
+.env
+node_modules/
+dist/
+.vscode/
+.cache/
+aiHelperGenerator.js
+modifyResumeBulletPoints.js
+modified-resume.docx

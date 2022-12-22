@@ -1,0 +1,32 @@
+{
+    "name": "create-word-document",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "start": "parcel public/index.html --open",
+        "build": "parcel build public/index.html"
+    },
+    "dependencies": {
+        "awesome-unoconv": "^1.0.1",
+        "bluebird": "^3.7.2",
+        "chatgpt": "^3.3.1",
+        "convert-multiple-files": "^1.2.5",
+        "docx": "4.7.1",
+        "docx-pdf": "^0.0.1",
+        "docxtemplater": "^3.33.0",
+        "dotenv": "^16.0.3",
+        "file-saver": "2.0.2",
+        "libreoffice-convert": "^1.4.1",
+        "office-js": "^0.1.0",
+        "openai": "^3.1.0",
+        "path": "^0.12.7",
+        "pizzip": "^3.1.4"
+    },
+    "devDependencies": {
+        "@babel/core": "7.2.0",
+        "parcel-bundler": "^1.12.5"
+    },
+    "type": "module",
+    "keywords": []
+}

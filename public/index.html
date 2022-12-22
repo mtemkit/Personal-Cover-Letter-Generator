@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Cover Letter Generator</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+    <script></script>
+  </head>
+
+  <body>
+
+    
+    <h1>Personal Cover Letter Generator (.Docx)</h1>
+
+    <!--For testing the functions using ready-made sample input-->
+    <form>
+      <h2>Sample Cover Letter</h2>
+      <input id="generate-sample" type = "button" value="Generate Sample Cover Letter (Sample Input, .Docx)">
+    </form>
+
+    <br><br>
+    <p>Note: No commas after the last word of any list! Capitalization does not matter!</p>
+    <br><br>
+    <!-- Create the form to take the inputs and store them into variables in JavaScript -->
+    <form id="generate-unique">
+      <h2>Tailored Cover Letter</h2>
+      <label for="position-name">Position Name</label>
+      <input type="text" id="position-name" required>
+      <label for="company-name">Company Name</label>
+      <input type="text" id="company-name" required>
+      <label for="company-description">Company Interest Phrase 
+        <br><i>Either "'1/2' of _" or "'1/2' in the _ industry"</i>
+        <br><i>Ex. "innovative development of case management software".</i>
+      </label>
+      <input type="text" id="company-description" required>
+      <!--<label for="body-paragraphs">Body Paragraphs</label>
+      <textarea id="body-paragraphs" rows="5" required></textarea>-->
+      <label for="job-key-languages">Job Key Languages
+        <br><i>(Included already: JavaScript, C#, SQL, Python, HTML, and CSS)</i>
+      </label>
+      <input type="job-key-languages" id="job-key-languages" required>
+      <label for="job-key-requirements">Job Key Requirements (Paste here):</label>
+      <textarea id="job-key-requirements" rows="5" required></textarea>
+      <input type="submit" value="Generate Tailored Cover Letter (Unique Input, .Docx)">
+    </form>
+
+
+    <!--<div id="app"></div>-->
+
+    <!--For testing the output with unique entered input-->
+    <!--<button id="generate">Generate Word Document with Unique Input</button>-->
+    <!--</br></br><button id="generatePDF">Generate PDF Document</button>-->
+    <script src="../src/index.js"></script>
+  </body>
+</html> 
