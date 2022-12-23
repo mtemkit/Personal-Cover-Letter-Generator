@@ -25,7 +25,7 @@ Once I enter the information to the form and submit, I only need to briefly look
 This is what the web page looks like. By clicking on either option, I'm able to download a cover letter within seconds. As mentioned, the sample is mainly for testing changes while the tailored option allows me to follow strict guidelines while providing me with a unique cover letter body text to work with as inspiration based on my input.
 
 <p align="left">
-  <img src="images/generator_site_demo.png" width="700" height="1200" title="Cover Letter Generator Page">
+  <img src="images/generator_site_demo.png" width="750" height="1250" title="Cover Letter Generator Page">
 </p>
 
 ### What Parts are There?
