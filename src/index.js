@@ -1,18 +1,5 @@
-/*Quick Set-Up Reminder:
-
-- Running script: npm run start
-- Use nodemon with "yarn add nodemon"/"npm install -g nodemon" to
-automatically update the console and refresh the application whenever I press "save"
-- To use parcel bundler: npm install parcel-bundler --save-dev 
-- key name for ".env" is OPENAI_API_KEY
-*/
-
-
-
-
 //-------------------------------------------------------------------------------------------------------------------------------------
 //PACKAGES USED!!!
-
 
 import { Document, Packer } from "docx";
 import { saveAs } from "file-saver";
@@ -28,11 +15,6 @@ import { Buffer } from 'buffer';
 
 //-------------------------------------------------------------------------------------------------------------------------------------
 //VARIABLES SET EARLY & FUNCTIONS
-
-//"A way that I've innovated is,"
-//"Additionally, I like problem solving and finding new solution,""
-//"I also like to continue learning about programming and improving my skills such as with".
-//just a general guideline. The focus should be on including key words, and keeping the paragraphs professional and concise, with unique and seamless transitions.  
 
 let coverLetter = {};
 let jobKeyExpectations = ''.concat(
@@ -439,32 +421,6 @@ function generateWordDocument(event) {
     )
   .style("customNormal");
 
-
-  /*THESE PARTS NEED TO BE MODIFIED!!! 
-  I NEED TO OUTPUT AN ARRAY WITH EACH PARAGRAPH AS A VALUE WHEN GIVEN THREE PARAGRAPHS AS INPUT.*/
-
-  /*
-   //Fourth Paragraph
-   doc
-   .createParagraph(
-     "My strong programming foundation was developed in the IAWD program where I explored Linux OS in-depth and created projects in both frontend and backend languages such as HTML, CSS, JS, C#, PHP, SQL, and Python. By exploring a wide array of principles, I was able to build, maintain, and deploy several projects in class from scratch such as a Course Registration App in C# and personal projects such as a Social Media App with MERN stack (MongoDB, Express, React.JS, and Node.JS). I further refined my skills as a Software Developer at I-Sight through completing dozens of fix and feature tickets which were reviewed and merged into the Node.JS base application."
-   )
-   .style("customNormal");
-   //Fifth Paragraph
-   doc
-   .createParagraph(
-     "I was able to refine my communication skills in the IAWD program where I exercised patience and open-mindedness as a team lead during discussions and collaborated with team members using Zoom, Microsoft Teams, and GitHub. As a WordPress developer serving bilingual content in both English and French, I was challenged to listen actively, be concise, and take initiative. At I-Sight, I learned the value of giving progress updates and getting feedback to improve quality of work through daily Slack meetings."
-   )
-   .style("customNormal");
-    //Sixth Paragraph
-    doc
-    .createParagraph(
-      "Throughout my programming journey, I’ve developed my problem-solving skills and learned to improve them through both experience and a deliberate effort to deal with problems systemically. This allows me to adapt quickly since I have a solid approach to address blockers. My co-op at I-Sight played a big part in improving this since I’ve learned to quickly write out questions stemming from a ticket, discuss with the team expert to understand the change, examine similar app features, and discuss wider scope implications. This includes knowing when to use Google and being willing to ask for help when blocked."
-    )
-    .style("customNormal");
-  */
-
-
     //Conclusion
     doc
     .createParagraph(
@@ -484,7 +440,7 @@ function generateWordDocument(event) {
 
 
   // Call saveDocumentToFile with the document instance and a filename
-  saveDocumentToFile(doc, "Practice Cover Letter - Mohamed Temkit.docx");
+  saveDocumentToFile(doc, "Cover Letter - Mohamed Temkit.docx");
   //saveDocumentToFile(doc, "New Document.pdf");
 }
 //end of the generate documention function
