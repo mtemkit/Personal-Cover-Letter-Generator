@@ -396,7 +396,7 @@ function generateWordDocument(event) {
   //Second Paragraph
   doc
     .createParagraph(
-      `As a graduating IAWD student from Algonquin College with a strong foundation in programming languages including ${capitalizeEachWord(formatCommaSeparatedValues(coverLetter.jobKeyLanguages))}JavaScript, C#, SQL, Python, HTML, and CSS, I have gained experience in software development and computer science through my co-op and team projects. In addition, I am bilingual (fluent in both English and French) and am capable of solving complex problems and writing concise technical summaries in a professional setting. I have also developed skills in building, testing, maintaining, and deploying code from scratch.`
+      `As a graduating IAWD student from Algonquin College with a strong foundation in programming languages including ${capitalizeEachWord(formatCommaSeparatedValues(coverLetter.jobKeyLanguages))}JavaScript, C#, SQL, Python, HTML, and CSS, I have gained experience in software development and computer science through my co-op and team projects. In addition, I am bilingual (fluent in both English and French) and can solve complex problems and write concise technical summaries in a professional setting. I have also developed skills in building, testing, maintaining, and deploying code from scratch.`
     )
     .style("customNormal");
 
