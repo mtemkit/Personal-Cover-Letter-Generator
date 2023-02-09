@@ -9,6 +9,7 @@ import { Configuration, OpenAIApi } from "openai";
 import * as dotenv from 'dotenv'; //hiding api keys or private info into .env files
 dotenv.config({path: '__dirname+../.env'})
 import { Buffer } from 'buffer';
+import numberToWords from 'number-to-words';
 
 
 
@@ -389,14 +390,14 @@ function generateWordDocument(event) {
   //First Paragraph
   doc
     .createParagraph(
-      `Please accept this letter as my application for ${wordBeforePosition(coverLetter.positionName)} ${coverLetter.positionName.toLowerCase()} position with ${wordBeforeCompany(coverLetter.companyName)}${capitalizeEachWord(removePeriod(coverLetter.companyName))}. With over three years of programming experience, I am confident in my ability to excel in this role and make a valuable contribution to your team.`
+      `Please accept this letter as my application for ${wordBeforePosition(coverLetter.positionName)} ${coverLetter.positionName.toLowerCase()} position with ${wordBeforeCompany(coverLetter.companyName)}${capitalizeEachWord(removePeriod(coverLetter.companyName))}. With over ${numberToWords.toWords((d.getFullYear() - 2019))} years of programming experience, I am confident in my ability to excel in this role and make a valuable contribution to your team.`
     )
     .style("customNormal");
 
   //Second Paragraph
   doc
     .createParagraph(
-      `As a recently graduated IAWD student from Algonquin College with a strong foundation in programming languages including ${capitalizeEachWord(formatCommaSeparatedValues(coverLetter.jobKeyLanguages))}JavaScript, C#, SQL, Python, HTML, and CSS, I have gained experience in software development and computer science through my co-op and team projects. In addition, I am bilingual (fluent in both English and French) and can solve complex problems and write concise technical summaries in a professional setting. I have also developed skills in building, testing, maintaining, and deploying code from scratch.`
+      `As a graduated IAWD student from Algonquin College with a strong foundation in programming languages including ${capitalizeEachWord(formatCommaSeparatedValues(coverLetter.jobKeyLanguages))}JavaScript, C#, SQL, Python, HTML, and CSS, I have gained experience in software development and computer science through my co-op and team projects. In addition, I am bilingual (fluent in both English and French) and can solve complex problems and write concise technical summaries in a professional setting. I have also developed skills in building, testing, maintaining, and deploying code from scratch.`
     )
     .style("customNormal");
 
